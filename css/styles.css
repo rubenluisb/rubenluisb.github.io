@@ -1,0 +1,384 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  color: #4a4a4a;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: #4a4a4a;
+  text-transform: capitalize;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+h3 {
+  margin: 60px 0;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 40px;
+  line-height: 1.6em;
+  font-size: 1em;
+  font-weight: 100;
+}
+
+a:link {
+  color: grey;
+  text-decoration: none;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover {
+	color: #ffce4a;
+}
+
+strong {
+  margin-left: 10px;
+}
+
+hr {
+	margin-top: 30px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.nav {
+  padding: 0;
+  margin-top: 20px;
+}
+
+.nav ul {
+	margin: 0;
+	list-style-type: none;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: 900;
+	float: right;
+	padding: 0;
+}
+
+.nav li {
+  list-style-type: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 900;
+	margin-top: 30px;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+}
+
+.nav li a:hover {
+	color: #ffce4a;
+}
+
+
+
+/* ---- Main Header ---- */
+
+
+
+.top-image {
+  width: 300px;
+  margin: 30px 0;
+}
+
+.special-text {
+  margin-top: 10px;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+
+/* ---- Main---- */
+
+
+.main-header,
+.contact {
+	background-color: #e0ab26;
+	color: white;
+	margin: 0;
+	padding: 0;
+	background: radial-gradient(transparent, orange),
+							#e0ab26 url('../img/back.png') bottom center repeat-x;
+}
+
+.portfolio-images {
+width: 100%;
+}
+
+.thumb h2 {
+  margin-top: 30px;
+}
+
+.skills h2 {
+	margin-top: 10px;
+}
+
+.skilltype {
+	margin: 0 auto;
+	width: 70%;
+	text-align: center;
+}
+
+.contact-number {
+font-weight: 800;
+}
+
+.contact-detail {
+  margin:0 0;
+  padding-bottom: 0;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+	margin: 0;
+	padding-bottom: 15px;
+}
+
+.contact p {
+	padding: 0;
+}
+
+/* ---- Footer---- */
+
+.footer-name {
+	margin: 0;
+	float: left;
+	font-size: 1em;
+}
+
+.footer-top {
+	margin-top: 3px;
+	text-transform: uppercase;
+	font-size: 1em;
+	float: right;
+}
+
+.footer-nav {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-nav li {
+	display: inline-block;
+	list-style-type: none;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: 900;
+	padding: 0 20px;
+}
+
+.footer-nav li a {
+	color: white;
+}
+
+.footer-nav li a:hover {
+	color: #ffce4a;
+}
+
+/* ---- Layout Containers ---- */
+
+.container {
+  width: 90%;
+	max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1px;
+}
+
+.skills {
+	padding-bottom: 30px;
+	padding-top: 1px;
+	background-color: #fafafa;
+	text-align: center;
+}
+
+.footer {
+	margin: 25px 0;
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+  .nav {
+    margin: 40px 0;
+	}
+
+
+
+	.nav li a {
+  	padding: 0;
+		color: white;
+	}
+
+  .thumb {
+    width: 50%;
+    float: left;
+    padding-right: 20px;
+  }
+
+
+  .top-image {
+    float: right;
+		margin-top: 0;
+		margin-bottom: 50px;
+		width: 50%;
+    max-width: 500px;
+  }
+
+  .special-text {
+    text-align: left;
+    float: left;
+    width: 50%;
+		margin-top: 50px;
+  }
+
+  .nav li {
+    display: inline-block;
+    background-color: inherit;
+    padding: 0 20px;
+
+  }
+
+  .portfolioli,
+  .homeli,
+	.skillsli {
+    border-right: solid 1px white;
+	}
+
+	.skilltype {
+		margin: 0 auto;
+		width: 33%;
+		display: inline-block;
+		padding: 0 25px;
+	}
+
+	.skilltype2 {
+		width: 33%;
+		margin: 0 auto;
+		padding: 0 25px;
+	}
+
+	.footer-top {
+		display: none;
+	}
+}
+
+
+
+
+@media (min-width: 1024px) {
+
+  .thumb {
+    width: 33%;
+    float: left;
+    padding-right: 20px;
+  }
+
+	.name-wide {
+		float: left;
+		margin: 0;
+		font-size: 4em;
+	}
+
+	.nav {
+		margin: 0;
+		float: right;
+	}
+
+	.title {
+		margin-top: 50px;
+		padding: 0;
+		margin-bottom: 0;
+	}
+
+	.special-text {
+		font-size: 1.6em;
+		margin-top: 30px;
+	}
+
+	.name {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+  .footer-nav {
+		display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+
+  .name-wide {
+		display: none;
+  }
+}
+
+
+
+
+
+
+
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
