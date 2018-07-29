@@ -217,6 +217,10 @@ font-weight: 800;
 	color: #ffce4a;
 }
 
+.icon {
+	width: 36px;
+}
+
 /* ---- Layout Containers ---- */
 
 .container {
