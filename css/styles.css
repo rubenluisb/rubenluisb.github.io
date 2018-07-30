@@ -75,7 +75,7 @@ ul {
 
 /* ---- Navigation ---- */
 
-.nav ul {
+nav ul {
   list-style-type: none;
   font-size: 1em;
   text-transform: uppercase;
@@ -83,13 +83,13 @@ ul {
 	margin-top: 30px;
 }
 
-.nav li a {
+nav li a {
   display: block;
   color: white;
 	margin-top: 30px;
 }
 
-.nav li a:hover {
+nav li a:hover {
 	color: #ffce4a;
 }
 
@@ -186,7 +186,7 @@ font-weight: 800;
 	padding: 0;
 }
 
-.footer-nav li {
+.footer-nav ul li {
 	display: inline-block;
 	list-style-type: none;
 	font-size: 1em;
@@ -195,11 +195,11 @@ font-weight: 800;
 	padding: 0 20px;
 }
 
-.footer-nav li a {
+.footer-nav ul li a {
 	color: white;
 }
 
-.footer-nav li a:hover {
+.footer-nav ul li a:hover {
 	color: #ffce4a;
 }
 
@@ -239,17 +239,17 @@ font-weight: 800;
 
 @media (min-width: 768px) {
 
-  .nav {
+  nav {
     margin: 40px 0;
 	}
 
-	.nav li {
+	nav ul li {
 		display: inline-block;
 		background-color: inherit;
 		padding: 0 20px;
 	}
 
-	.nav li a {
+	nav li a {
 		margin: 0;
 	}
 
@@ -303,12 +303,12 @@ font-weight: 800;
 
 @media (min-width: 1024px) {
 
-	.nav {
+	nav {
 		margin: 0;
 		float: right;
 	}
 
-	.nav ul {
+	nav ul {
 		margin-top: 5px;
 	}
 
