@@ -75,22 +75,7 @@ ul {
 
 /* ---- Navigation ---- */
 
-.nav {
-  padding: 0;
-  margin-top: 20px;
-}
-
 .nav ul {
-	margin: 0;
-	list-style-type: none;
-	font-size: 1em;
-	text-transform: uppercase;
-	font-weight: 900;
-	float: right;
-	padding: 0;
-}
-
-.nav li {
   list-style-type: none;
   font-size: 1em;
   text-transform: uppercase;
@@ -101,6 +86,7 @@ ul {
 .nav li a {
   display: block;
   color: white;
+	margin-top: 30px;
 }
 
 .nav li a:hover {
@@ -222,7 +208,7 @@ font-weight: 800;
 }
 
 .psicon {
-	width: 60px;
+	width: 55px;
 }
 
 /* ---- Layout Containers ---- */
@@ -257,11 +243,14 @@ font-weight: 800;
     margin: 40px 0;
 	}
 
-
+	.nav li {
+		display: inline-block;
+		background-color: inherit;
+		padding: 0 20px;
+	}
 
 	.nav li a {
-  	padding: 0;
-		color: white;
+		margin: 0;
 	}
 
   .thumb {
@@ -269,7 +258,6 @@ font-weight: 800;
     float: left;
     padding-right: 20px;
   }
-
 
   .top-image {
     float: right;
@@ -286,14 +274,7 @@ font-weight: 800;
 		margin-top: 50px;
   }
 
-  .nav li {
-    display: inline-block;
-    background-color: inherit;
-    padding: 0 20px;
-
-  }
-
-  .portfolioli,
+	.portfolioli,
   .homeli,
 	.skillsli {
     border-right: solid 1px white;
@@ -322,7 +303,16 @@ font-weight: 800;
 
 @media (min-width: 1024px) {
 
-  .thumb {
+	.nav {
+		margin: 0;
+		float: right;
+	}
+
+	.nav ul {
+		margin-top: 5px;
+	}
+
+	.thumb {
     width: 33%;
     float: left;
     padding-right: 20px;
@@ -332,11 +322,6 @@ font-weight: 800;
 		float: left;
 		margin: 0;
 		font-size: 4em;
-	}
-
-	.nav {
-		margin: 0;
-		float: right;
 	}
 
 	.title {
@@ -355,13 +340,6 @@ font-weight: 800;
 	}
 }
 
-
-
-
-
-
-
-
 @media (max-width: 767px) {
 
   .footer-nav {
@@ -375,12 +353,6 @@ font-weight: 800;
 		display: none;
   }
 }
-
-
-
-
-
-
 
 
 	/* ---- Float clearfix ---- */
